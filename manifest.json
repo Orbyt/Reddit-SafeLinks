@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "SafeLinks",
+  "description": "This extension colors posts that link to well known sites (Imgur, Gfycat, etc..)",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+    "background":{
+            "scripts":["jquery-2.1.3.min.js","safelinks.js"]
+        },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
